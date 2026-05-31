@@ -1,0 +1,1 @@
+/home/migueteado/.config/omarchy/current/theme/neovim.lua
