@@ -116,3 +116,9 @@ source $ZSH/oh-my-zsh.sh
 # Aliases 
 alias ls="eza -la --icons"
 alias findport="lsof -P | grep ':3000' | awk '{print $2}'"
+
+# SSH Agent
+if [ -z "$SSH_AUTH_SOCK" ]; then
+    eval "$(ssh-agent -s)" > /dev/null
+    ssh-add ~/.ssh/id_ed25519 2>/dev/null
+fi
