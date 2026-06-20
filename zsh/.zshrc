@@ -79,6 +79,9 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git)
 
+# mise
+eval "$(mise activate zsh)"
+
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
@@ -122,3 +125,4 @@ if [ -z "$SSH_AUTH_SOCK" ]; then
     eval "$(ssh-agent -s)" > /dev/null
     ssh-add ~/.ssh/id_ed25519 2>/dev/null
 fi
+
