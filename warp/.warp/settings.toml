@@ -1,0 +1,13 @@
+[appearance]
+
+[appearance.themes]
+system_theme = true
+theme = "adeberry"
+selected_system_themes = {
+  dark = { custom = { name = "Catpppuccin Mocha", path = "catpppuccin_mocha.yml" } },
+  light = "light",
+}
+
+[appearance.text]
+notebook_font_size = 14.0
+font_size = 13.0
