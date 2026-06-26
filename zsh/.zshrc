@@ -1,3 +1,4 @@
+export PATH="$HOME/.local/bin:$PATH"
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
@@ -79,9 +80,6 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git)
 
-# mise
-eval "$(mise activate zsh)"
-
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
@@ -126,3 +124,5 @@ if [ -z "$SSH_AUTH_SOCK" ]; then
     ssh-add ~/.ssh/id_ed25519 2>/dev/null
 fi
 
+# mise
+eval "$(mise activate zsh)"
